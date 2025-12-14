@@ -1,6 +1,6 @@
 # Mekanbul Backend
 
-Demo: [Vercel Linki Buraya Gelecek]
+Demo: [https://backend-orpin-five-91.vercel.app/]
 
 Bu repo mekanbul-backend uygulamasının basit Node.js + Express + Mongoose backend'idir.
 
