@@ -1,0 +1,467 @@
+{
+	"info": {
+		"_postman_id": "1584add2-55e0-4329-9b4d-1d2408c8c749",
+		"name": "Gökay Uysal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50528006",
+		"_collection_link": "https://gokayakvaryum-4064510.postman.co/workspace/Cathode-Ray-Tube's-Workspace~ab99a281-14de-42b7-8924-9cf4f265264b/collection/50528006-1584add2-55e0-4329-9b4d-1d2408c8c749?action=share&source=collection_link&creator=50528006"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testMekan",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "testAdres",
+							"type": "text"
+						},
+						{
+							"key": "foodanddrink",
+							"value": "Çay, Kahve, Tost",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "long",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "days1",
+							"value": "Pazartesi-Cuma",
+							"type": "text"
+						},
+						{
+							"key": "open1",
+							"value": "09:00",
+							"type": "text"
+						},
+						{
+							"key": "close1",
+							"value": "17:00",
+							"type": "text"
+						},
+						{
+							"key": "isClosed",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "days2",
+							"value": "Cumartesi-Pazar",
+							"type": "text"
+						},
+						{
+							"key": "open2",
+							"value": "10:00",
+							"type": "text"
+						},
+						{
+							"key": "close2",
+							"value": "16:00",
+							"type": "text"
+						},
+						{
+							"key": "isClosed2",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://backend-orpin-five-91.vercel.app/api/venues",
+					"protocol": "https",
+					"host": [
+						"backend-orpin-five-91",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-orpin-five-91.vercel.app/api/venues?lat=37&long=30",
+					"protocol": "https",
+					"host": [
+						"backend-orpin-five-91",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "37"
+						},
+						{
+							"key": "long",
+							"value": "30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-orpin-five-91.vercel.app/api/venues/693f20e0f87038d5a695494d",
+					"protocol": "https",
+					"host": [
+						"backend-orpin-five-91",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues",
+						"693f20e0f87038d5a695494d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "testMekan(Güncellendi)",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "testAdres",
+							"type": "text"
+						},
+						{
+							"key": "foodanddrink",
+							"value": "Çay, Kahve, Tost",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "long",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "days1",
+							"value": "Pazartesi-Cuma",
+							"type": "text"
+						},
+						{
+							"key": "open1",
+							"value": "09:00",
+							"type": "text"
+						},
+						{
+							"key": "close1",
+							"value": "17:00",
+							"type": "text"
+						},
+						{
+							"key": "isClosed",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "days2",
+							"value": "Cumartesi-Pazar",
+							"type": "text"
+						},
+						{
+							"key": "open2",
+							"value": "10:00",
+							"type": "text"
+						},
+						{
+							"key": "close2",
+							"value": "16:00",
+							"type": "text"
+						},
+						{
+							"key": "isClosed2",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://backend-orpin-five-91.vercel.app/api/venues/693f20e0f87038d5a695494d",
+					"protocol": "https",
+					"host": [
+						"backend-orpin-five-91",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues",
+						"693f20e0f87038d5a695494d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "author",
+							"value": "Gökay Uysal",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "Deneme yorumu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://backend-orpin-five-91.vercel.app/api/venues/693f20e0f87038d5a695494d/comments",
+					"protocol": "https",
+					"host": [
+						"backend-orpin-five-91",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues",
+						"693f20e0f87038d5a695494d",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "author",
+							"value": "Gökay Uysal",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "Deneme yorumu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://backend-orpin-five-91.vercel.app/api/venues/693f20e0f87038d5a695494d/comments/693f2200f87038d5a695495d",
+					"protocol": "https",
+					"host": [
+						"backend-orpin-five-91",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues",
+						"693f20e0f87038d5a695494d",
+						"comments",
+						"693f2200f87038d5a695495d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "author",
+							"value": "Gökay Uysal",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "Deneme yorumu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://backend-orpin-five-91.vercel.app/api/venues/693f20e0f87038d5a695494d/comments/693f2200f87038d5a695495d",
+					"protocol": "https",
+					"host": [
+						"backend-orpin-five-91",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues",
+						"693f20e0f87038d5a695494d",
+						"comments",
+						"693f2200f87038d5a695495d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "author",
+							"value": "Gökay Uysal",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "Deneme yorumu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://backend-orpin-five-91.vercel.app/api/venues/693f20e0f87038d5a695494d/comments/693f2200f87038d5a695495d",
+					"protocol": "https",
+					"host": [
+						"backend-orpin-five-91",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues",
+						"693f20e0f87038d5a695494d",
+						"comments",
+						"693f2200f87038d5a695495d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "author",
+							"value": "Gökay Uysal",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "Deneme yorumu",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://backend-orpin-five-91.vercel.app/api/venues/693f20e0f87038d5a695494d",
+					"protocol": "https",
+					"host": [
+						"backend-orpin-five-91",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues",
+						"693f20e0f87038d5a695494d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
