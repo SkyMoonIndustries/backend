@@ -11,6 +11,7 @@ Bu repo mekanbul-backend uygulamasının basit Node.js + Express + Mongoose back
 ## Kurulum
 ```bash
 npm install
+```
 
 ## API Test Ekran Görüntüleri (Kanıtlar)
 
