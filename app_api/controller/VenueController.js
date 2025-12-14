@@ -5,7 +5,6 @@ const createResponse = function (res, status, content) {
   res.status(status).json(content);
 };
 
-// Mesafe çevirici (Web-9 Sunumundan)
 var converter = (function () {
   var earthRadius = 6371; // km
   var radian2Kilometer = function (radian) {
@@ -20,7 +19,7 @@ var converter = (function () {
   };
 })();
 
-// MEKANLARI LİSTELE (GET)
+// MEKANLARI LİSTELE
 const listVenues = async function (req, res) {
   var lat = parseFloat(req.query.lat) || 0;
   var long = parseFloat(req.query.long) || 0;
@@ -59,7 +58,7 @@ const listVenues = async function (req, res) {
   }
 };
 
-// YENİ MEKAN EKLE (POST) - (Web-10 Slide 4)
+// YENİ MEKAN EKLE (DÜZELTİLDİ: days -> day)
 const addVenue = async function (req, res) {
   try {
     await Venue.create({
@@ -67,13 +66,13 @@ const addVenue = async function (req, res) {
       coordinates: [parseFloat(req.body.lat), parseFloat(req.body.long)],
       hours: [
         {
-          days: req.body.days1,
+          day: req.body.days1, // Burası 'days' idi, 'day' yapıldı
           open: req.body.open1,
           close: req.body.close1,
           isClosed: req.body.isClosed1,
         },
         {
-          days: req.body.days2,
+          day: req.body.days2, // Burası 'days' idi, 'day' yapıldı
           open: req.body.open2,
           close: req.body.close2,
           isClosed: req.body.isClosed2,
@@ -87,7 +86,6 @@ const addVenue = async function (req, res) {
   }
 };
 
-// TEK MEKAN GETİR (GET)
 const getVenue = async function (req, res) {
   try {
     await Venue.findById(req.params.venueid)
@@ -104,7 +102,7 @@ const getVenue = async function (req, res) {
   }
 };
 
-// MEKAN GÜNCELLE (PUT) - (Web-10 Slide 13)
+// MEKAN GÜNCELLE (DÜZELTİLDİ: days -> day)
 const updateVenue = async function (req, res) {
   try {
     const updatedVenue = await Venue.findByIdAndUpdate(
@@ -114,13 +112,13 @@ const updateVenue = async function (req, res) {
         coordinates: [parseFloat(req.body.lat), parseFloat(req.body.long)],
         hours: [
           {
-            days: req.body.days1,
+            day: req.body.days1, // Burası 'days' idi, 'day' yapıldı
             open: req.body.open1,
             close: req.body.close1,
             isClosed: req.body.isClosed1,
           },
           {
-            days: req.body.days2,
+            day: req.body.days2, // Burası 'days' idi, 'day' yapıldı
             open: req.body.open2,
             close: req.body.close2,
             isClosed: req.body.isClosed2,
@@ -135,7 +133,6 @@ const updateVenue = async function (req, res) {
   }
 };
 
-// MEKAN SİL (DELETE) - (Web-10 Slide 19)
 const deleteVenue = async function (req, res) {
   try {
     await Venue.findByIdAndDelete(req.params.venueid).then(function (venue) {
